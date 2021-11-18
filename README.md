@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Karina Borges</h1>
 <h3 align="center">A passionate frontend developer from Brazil working at <a href="https://www.cuponeria.com.br" target="_blank">Cuponeria!</a></h3>
 
-- 🌱 I’m currently learning **ReactJs, React Native**
+- 🌱 I’m currently working with **ReactJS with NextJS**
 
 - 📫 How to reach me **karinaborges@outlook.com**
 
