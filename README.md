@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Karina Borges</h1>
-<h3 align="center">Frontend Engineer | Passionate about building scalable, performant and accessible web apps</h3>
+<h3 align="center">Lead Frontend Engineer | Passionate about building scalable, performant and accessible web apps</h3>
 
 - 👩‍💻 I'm a Frontend Software Engineer working with **React**, **Next.js**, and **TypeScript**
-- 🚀 Currently building a full-stack SaaS product during **Rocketseat’s Micro SaaS Challenge**
+- 🚀 Currently building a full-stack SaaS product with a monorepo approach with **Turborepo**
 - ☁️ AWS Certified and experienced with **Firebase**, **Stripe**, **Jest**, and **TailwindCSS**
 - 📊 I enjoy creating real-time apps and working with AI-powered solutions
 - 📫 Reach me at **karinaborges@outlook.com**
