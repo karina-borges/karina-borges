@@ -89,6 +89,10 @@ I write about AI-augmented development — agentic workflows, MCP, and spec-driv
   <img src="./github-metrics.svg" alt="Karina Borges — GitHub metrics" />
 </p>
 
+<p align="center">
+  <img src="./languages.svg" alt="Most used languages across all repositories, including private" />
+</p>
+
 ---
 
 <p align="center">
