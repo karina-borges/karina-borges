@@ -86,12 +86,7 @@ I write about AI-augmented development — agentic workflows, MCP, and spec-driv
 ### GitHub Activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=karina-borges&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=karina-borges&layout=compact&hide_border=true&langs_count=8&theme=default" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=karina-borges&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=karina-borges&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
