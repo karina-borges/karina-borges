@@ -29,27 +29,14 @@ jobs:
           # Core sections (aggregate only — no private repo names exposed)
           base: header, activity, community, metadata
 
-          # Language breakdown — in-depth mode analyzes repos (incl. private)
-          # with GitHub linguist, so Python shows up accurately.
-          repositories_affiliations: owner, collaborator, organization_member
+          # Language breakdown — "most-used" reads all-time bytes from GitHub's
+          # GraphQL API and includes private repos via the token's repo scope.
+          # (No indepth / bytes-size: those need push-event matching and broke it.)
           plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
+          plugin_languages_details: percentage
           plugin_languages_ignored: html, css, scss, dockerfile
 
           # Contribution calendar (streak-style visual)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-          # Coding habits — active hours/days, work patterns, indent style
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-
-          # Notable contributions — organizations where you've committed meaningfully
-          plugin_notable: yes
-          plugin_notable_types: commit
