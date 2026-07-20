@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="164" viewBox="0 0 480 164">
+<style>
+text { font: 400 12px "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif; fill: #24292f; }
+.title { font-size: 14px; font-weight: 600; fill: #0969da; }
+.pct { fill: #57606a; }
+@media (prefers-color-scheme: dark) {
+  text { fill: #c9d1d9; }
+  .title { fill: #58a6ff; }
+  .pct { fill: #8b949e; }
+}
+</style>
+<text class="title" x="15" y="22">Most used languages <tspan class="pct" font-weight="400">— all repos, incl. private</tspan></text>
+<clipPath id="bar"><rect x="15" y="38" width="450" height="12" rx="6"/></clipPath>
+<g clip-path="url(#bar)"><rect x="15.00" y="38" width="403.59" height="12" fill="#3178c6"/><rect x="418.59" y="38" width="23.12" height="12" fill="#f1e05a"/><rect x="441.71" y="38" width="9.19" height="12" fill="#fcb32c"/><rect x="450.90" y="38" width="8.95" height="12" fill="#89e051"/><rect x="459.85" y="38" width="2.18" height="12" fill="#DA5B0B"/><rect x="462.03" y="38" width="1.37" height="12" fill="#336790"/><rect x="463.39" y="38" width="0.98" height="12" fill="#b07219"/><rect x="464.37" y="38" width="0.63" height="12" fill="#012456"/></g>
+<circle cx="20" cy="68" r="5" fill="#3178c6"/><text x="31" y="72">TypeScript <tspan class="pct">89.7%</tspan></text><circle cx="250" cy="68" r="5" fill="#f1e05a"/><text x="261" y="72">JavaScript <tspan class="pct">5.1%</tspan></text><circle cx="20" cy="90" r="5" fill="#fcb32c"/><text x="31" y="94">MDX <tspan class="pct">2.0%</tspan></text><circle cx="250" cy="90" r="5" fill="#89e051"/><text x="261" y="94">Shell <tspan class="pct">2.0%</tspan></text><circle cx="20" cy="112" r="5" fill="#DA5B0B"/><text x="31" y="116">Jupyter Notebook <tspan class="pct">0.5%</tspan></text><circle cx="250" cy="112" r="5" fill="#336790"/><text x="261" y="116">PLpgSQL <tspan class="pct">0.3%</tspan></text><circle cx="20" cy="134" r="5" fill="#b07219"/><text x="31" y="138">Java <tspan class="pct">0.2%</tspan></text><circle cx="250" cy="134" r="5" fill="#012456"/><text x="261" y="138">PowerShell <tspan class="pct">0.1%</tspan></text>
+</svg>
