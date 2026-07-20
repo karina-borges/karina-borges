@@ -86,7 +86,7 @@ I write about AI-augmented development — agentic workflows, MCP, and spec-driv
 ### GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=karina-borges&hide_border=true" alt="GitHub Streak" />
+  <img src="./github-metrics.svg" alt="Karina Borges — GitHub metrics" />
 </p>
 
 ---
