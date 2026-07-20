@@ -14,13 +14,26 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      # --- Self-owned languages card (replaces the broken plugin section) ---
+      - uses: actions/checkout@v4
+
+      - name: Generate languages card
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: python3 scripts/generate_languages.py
+
+      - name: Commit languages card (only when the distribution changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add languages.svg
+          git diff --cached --quiet || { git commit -m "chore: update languages card"; git push; }
+
+      # --- Metrics card (all sections here populate reliably) ---
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          # Personal Access Token stored as a repo secret
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # Output committed into the repo
           filename: github-metrics.svg
           user: karina-borges
           template: classic
@@ -29,14 +42,6 @@ jobs:
           # Core sections (aggregate only — no private repo names exposed)
           base: header, activity, community, metadata
 
-          # Language breakdown — "most-used" reads all-time bytes from GitHub's
-          # GraphQL API and includes private repos via the token's repo scope.
-          # (No indepth / bytes-size: those need push-event matching and broke it.)
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_details: percentage
-          plugin_languages_ignored: html, css, scss, dockerfile
-
-          # Contribution calendar (streak-style visual)
+          # Contribution calendar + streaks (the standout visual)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
